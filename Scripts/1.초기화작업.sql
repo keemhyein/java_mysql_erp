@@ -20,7 +20,7 @@ ALTER TABLE erp.title
 
 -- 부서
 CREATE TABLE erp.department (
-	code  INT(4)      NOT NULL COMMENT '새 컬럼', -- 새 컬럼
+	code  INT(4)      NOT NULL COMMENT '부서코드', -- 부서코드
 	name  VARCHAR(50) NOT NULL COMMENT '부서명', -- 부서명
 	floor INTEGER     NULL     COMMENT '위치' -- 위치
 )
@@ -30,7 +30,7 @@ COMMENT '부서';
 ALTER TABLE erp.department
 	ADD CONSTRAINT PK_department -- 부서 기본키
 		PRIMARY KEY (
-			code -- 새 컬럼
+			code -- 부서코드
 		);
 
 -- 사원
@@ -78,5 +78,5 @@ ALTER TABLE erp.employee
 			dno -- 부서
 		)
 		REFERENCES erp.department ( -- 부서
-			code -- 새 컬럼
+			code -- 부서코드
 		);
