@@ -14,6 +14,7 @@ values
 select code, name from title;
 
 insert into erp.department (code, name, floor) values(1, '기획', 10);
+insert into erp.department values (2, '인사', 9), (3, '마케팅', 8);
 
 select * from department;
 

@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 public class jdbcUtil {
+	
 	public static Connection getConnection() {
 		Connection con = null;
 		String propPath = "mysql_db.properties";
@@ -24,5 +25,6 @@ public class jdbcUtil {
 		} 
 		
 		return con;
+		
 	}
 }
