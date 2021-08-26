@@ -39,7 +39,10 @@ public class TitleDaoTest {
 
    @Test
    public void testSelectTiltleByCode() {
-      fail("Not yet implemented");
+	  System.out.println("testSelectTiltleByCode()");
+	  Title selectTitle = dao.selectTitleByCode(new Title(5));
+	  Assert.assertNotNull(selectTitle);
+	  System.out.println(selectTitle);
    }
 
    @Test
