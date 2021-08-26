@@ -11,7 +11,7 @@ values
 (4, '대리'),
 (5, '사원');
 
-select * from title;
+select code, name from title;
 
 insert into erp.department (code, name, floor) values(1, '기획', 10);
 
